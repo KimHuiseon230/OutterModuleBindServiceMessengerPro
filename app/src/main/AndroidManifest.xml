@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
+<!--외부 모듈에 있는 서비스와 연결하기 위해서 패키지명을 등록한다.-->
+    <queries>
+        <package android:name="com.example.mp3servicemessengerpro"/>
+    </queries>
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,6 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OutterModuleBindServiceMessengerPro"
         tools:targetApi="31">
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
